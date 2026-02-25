@@ -1,4 +1,4 @@
-window.config = {
+const config = {
   "property": {
     "streetAddress": "44 Andrew Hill Dr",
     "city": "Vaughan",
@@ -16,7 +16,7 @@ window.config = {
     "social": {
       "facebook": "https://www.facebook.com/theskygroupre",
       "instagram": "https://www.instagram.com/theskygroup_re",
-      "website": "#"
+      "website": "https://theskygroup.ca/"
     }
   },
   "brokerage": {
@@ -27,27 +27,23 @@ window.config = {
   "openHouse": {
     "eventDate": "",
     "bundleItems": [
-            {
-                  "icon": "fas fa-home",
-                  "text": "Full Property Listing",
-                  "url": "https://property.ca/vaughan/44-andrew-hill-drive-woodbridge"
-            },
-            {
-                  "icon": "fas fa-vr-cardboard",
-                  "text": "3D Virtual Tour",
-                  "url": "https://tenzi-homes.aryeo.com/sites/44-andrew-hill-dr-vaughan-on-l4h-0h3-21751618/branded"
-            },
-            {
-                  "icon": "fas fa-ruler-combined",
-                  "text": "Architectural Floor Plan",
-                  "url": "https://drive.google.com/drive/folders/1rmZDC4ifo0RxtZ5oArEd8sPfRLmFNiXi?usp=sharing"
-            },
-            {
-                  "icon": "fas fa-video",
-                  "text": "Video Tour",
-                  "url": "https://aryeo.sfo2.cdn.digitaloceanspaces.com/listings/019bfb4e-d430-7123-acb2-03068c340449/files/019c315d-7b80-70a2-8ee9-7c236da6a388.mp4"
-            }
-      ]
+      {
+        "icon": "fas fa-home",
+        "text": "Full Property Listing"
+      },
+      {
+        "icon": "fas fa-vr-cardboard",
+        "text": "3D Virtual Tour"
+      },
+      {
+        "icon": "fas fa-ruler-combined",
+        "text": "Architectural Floor Plan"
+      },
+      {
+        "icon": "fas fa-video",
+        "text": "Video Tour"
+      }
+    ]
   },
   "meta": {
     "pageTitlePrefix": "🏡 Oudi Elmalem Open House",
@@ -55,7 +51,7 @@ window.config = {
     "privacyPolicyLink": "https://www.mls.theskygroup.ca/privacy-policy"
   },
   "settings": {
-   "primaryColor": "",
+    "primaryColor": "",
     "secondaryColor": "",
     "accentColor": "",
     "neutralColor": "",
@@ -70,46 +66,91 @@ window.config = {
     ]
   },
   "modalQuestions": [
-  {
-    "id": "q_auto_1750445840887_0",
-    "questionText": "What's your current situation?",
-    "options": [
-      { "value": "I own my home", "text": "I own my home" },
-      { "value": "I rent", "text": "I rent" },
-      { "value": "Live with family/friends", "text": "Live with family/friends" },
-      { "value": "Between homes", "text": "Between homes" }
-    ]
-  },
-  {
-    "id": "q_auto_1750445840887_1",
-    "questionText": "What are you looking to do?",
-    "options": [
-      { "value": "Buy a home", "text": "Buy a home" },
-      { "value": "Sell and buy", "text": "Sell and buy" },
-      { "value": "Rent a place", "text": "Rent a place" },
-      { "value": "Invest in property", "text": "Invest in property" }
-    ]
-  },
-  {
-    "id": "q_auto_1750445840887_2",
-    "questionText": "When are you planning to move?",
-    "options": [
-      { "value": "ASAP", "text": "ASAP" },
-      { "value": "3-6 months", "text": "3-6 months" },
-      { "value": "6-12 months", "text": "6-12 months" },
-      { "value": "12+ months", "text": "12+ months" }
-    ]
-  },
-  {
-    "id": "agent_status",
-    "questionText": "Are you currently exploring homes with a real estate agent?",
-    "options": [
-      { "value": "committed", "text": "Yes, I'm committed to an agent." },
-      { "value": "not_committed", "text": "No, I'm not committed to an agent." },
-      { "value": "gathering_info", "text": "Just gathering information at this stage." }
-    ]
-  }
-],
+    {
+      "id": "q_auto_1750445840887_0",
+      "questionText": "What's your current situation?",
+      "options": [
+        {
+          "value": "I own my home",
+          "text": "I own my home"
+        },
+        {
+          "value": "I rent",
+          "text": "I rent"
+        },
+        {
+          "value": "Live with family/friends",
+          "text": "Live with family/friends"
+        },
+        {
+          "value": "Between homes",
+          "text": "Between homes"
+        }
+      ]
+    },
+    {
+      "id": "q_auto_1750445840887_1",
+      "questionText": "What are you looking to do?",
+      "options": [
+        {
+          "value": "Buy a home",
+          "text": "Buy a home"
+        },
+        {
+          "value": "Sell and buy",
+          "text": "Sell and buy"
+        },
+        {
+          "value": "Rent a place",
+          "text": "Rent a place"
+        },
+        {
+          "value": "Invest in property",
+          "text": "Invest in property"
+        }
+      ]
+    },
+    {
+      "id": "q_auto_1750445840887_2",
+      "questionText": "When are you planning to move?",
+      "options": [
+        {
+          "value": "ASAP",
+          "text": "ASAP"
+        },
+        {
+          "value": "3-6 months",
+          "text": "3-6 months"
+        },
+        {
+          "value": "6-12 months",
+          "text": "6-12 months"
+        },
+        {
+          "value": "12+ months",
+          "text": "12+ months"
+        }
+      ]
+    },
+    {
+      "id": "agent_status",
+      "questionText": "Are you currently exploring homes with a real estate agent?",
+      "options": [
+        {
+          "value": "committed",
+          "text": "Yes, I'm committed to an agent."
+        },
+        {
+          "value": "not_committed",
+          "text": "No, I'm not committed to an agent."
+        },
+        {
+          "value": "gathering_info",
+          "text": "Just gathering information at this stage."
+        }
+      ]
+    }
+  ],
   "deploymentInfo": {
     "repoId": "1166043710",
     "repoName": "Open-House-133",
