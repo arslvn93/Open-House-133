@@ -21,7 +21,7 @@ const config = {
   },
   "brokerage": {
     "name": "Property.ca Inc",
-    "logoUrl": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Property_logo_W.png",
+    "logoUrl": "https://theskygroup.ca/wp-content/uploads/2022/07/SkyGroupLogo.png",
     "address": "36 Distillery Lane unit 500, Toronto, ON M5A 3C4"
   },
   "openHouse": {
