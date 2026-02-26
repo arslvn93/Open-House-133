@@ -48,7 +48,7 @@ const config = {
   "meta": {
     "pageTitlePrefix": "🏡 Oudi Elmalem Open House",
     "navBrandLogoText": "OPEN HOUSE",
-    "privacyPolicyLink": "https://www.mls.theskygroup.ca/privacy-policy"
+    "privacyPolicyLink": "https://property.ca/privacy"
   },
   "settings": {
     "primaryColor": "",
